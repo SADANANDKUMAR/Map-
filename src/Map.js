@@ -12,9 +12,33 @@ import DoneSharpIcon from '@mui/icons-material/DoneSharp';
 import List from '@mui/material/List';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import Box from '@mui/joy/Box';
+import Slider from '@mui/joy/Slider';
 
 
 
+// const marks = [
+//     {
+//         value: 0,
+//         label: '0°C',
+//     },
+//     {
+//         value: 20,
+//         label: '20°C',
+//     },
+//     {
+//         value: 37,
+//         label: '37°C',
+//     },
+//     {
+//         value: 100,
+//         label: 'final',
+//     },
+// ];
+
+// function valueText(value) {
+//     return `${value}°C`;
+// }
 
 
 
@@ -22,6 +46,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 
 
 function Map() {
+
+
 
     const StyledBadge = styled(Badge)(({ theme }) => ({
         "& .MuiBadge-badge": {
@@ -101,6 +127,19 @@ function Map() {
                             <div class="row">
                                 <div class="col-sm">
                                     <ol class="list-group list-group">
+                                    {/* <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <Box sx={{ mx: 'auto', height: 200 }}>
+                                            <Slider
+                                                orientation="vertical"
+                                                aria-label="Always visible"
+                                                defaultValue={80}
+                                                getAriaValueText={valueText}
+                                                step={10}
+                                                marks={marks}
+                                                valueLabelDisplay="on"
+                                            />
+                                        </Box>
+                                        </li> */}
                                         <li class="list-group-item d-flex justify-content-between align-items-start">
                                             <PlaceIcon />
                                             <div class="ms-2 me-auto fw-lighter" style={{ fontSize: '0.7rem' }}>
@@ -173,9 +212,9 @@ function Map() {
                                     <div class="ms-2 me-auto" style={{ fontSize: '0.7rem' }}>
                                         <div class="fw-bold">Item total</div>
                                         <ol class="fw-lighter" style={{ textAlign: 'initial' }}>
-                                            <li>Chicken roll  &nbsp;	x 2</li>
-                                            <li>KadaiPaneer &nbsp;	x 1</li>
-                                            <li>Parotha &nbsp;	 x 1</li>
+                                            <li>I phone  &nbsp;	x 1</li>
+                                            <li>Rice pack &nbsp;	x 1</li>
+                                            <li>Jeans &nbsp;	 x 2</li>
                                         </ol>
 
                                     </div>
